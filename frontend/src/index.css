@@ -1,0 +1,451 @@
+body {
+  margin: 0;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+nav {
+  z-index: 2;
+}
+
+.logo {
+  width: 16.25rem;
+}
+
+/*************** MENU  LINKS*****************/
+nav a.nav-link {
+  font-size: 0.85rem;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar {
+  background-color: white !important;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: white;
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0;
+  height: 6rem;
+  margin-right: 100px;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.focus {
+  color: orange;
+}
+
+.navbar-nav > li > a:hover{
+  color: orange !important;
+  cursor: pointer !important;
+}
+
+
+/*************** HEADER *****************/
+.header-wrapper {
+  position: relative;
+  background: Linear-Gradient(
+      Rgba(240, 240, 240, 0.144),
+      Rgba(255, 255, 255, 0.336)
+    ), url("./header2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-info h1 {
+  color: black;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.main-info p{
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: -19px;
+}
+
+@media (max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  } }
+
+  /*************** MAIN OFFER BUTTON *****************/
+
+  .btn-main-offer {
+
+    background-color: none;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid white;
+  }
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  border: none;
+  background-color: orange;
+  color: black;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+
+/*************** ABOUT *****************/
+
+.about-us{
+  padding-top: 100px;
+}
+
+.about-us h1 h4{
+  padding-bottom: 100px;
+}
+.flex-container {
+  display: flex;
+  margin: 0 auto;
+  width: 95%;
+  flex-flow: row wrap;
+  justify-content: center;
+
+}
+
+.box {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  width: 550px;
+  height: 600px;
+  margin: 10px;
+}
+
+.b1 {
+  background: url("./about.jpg");
+  background-size: cover;
+  order: 2;
+  border-radius: 50px;
+}
+
+.b2 {
+  order: 1;
+  align-items: center;
+  padding: 18px;
+}
+
+.b2 h3{
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  color: orange;
+}
+
+.b2 h1{
+  text-transform: uppercase;
+}
+
+.b2 p{
+  font-weight: 300;
+}
+
+@media (max-width: 600px) {
+  .b1{
+    width: 0;
+    height: 0;
+  }
+}
+
+.about-us {
+  display: flex;
+}
+
+/*************** SERVICES CARROUSEL *****************/
+
+.services {
+  background-image: url(boda.jpg);
+  background-color: lightgray;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.services h1{
+  text-transform: uppercase;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  color: white;
+  background: orange;
+}
+
+.services-content {
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.myCarousel {
+  color: whitesmoke;
+  background: orange;
+  margin: -6% auto 0 auto;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 10px;
+}
+
+.myCarousel h3{
+  text-transform: uppercase;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.carousel .slide img{
+  width: 400px !important; 
+  height: 500px !important;
+}
+
+.carousel .slide{
+  background: transparent !important;
+  height: 100%;
+  padding-top: 2rem;
+}
+
+.carousel-root{
+  margin: 3% auto auto auto !important;
+}
+
+/*************** CLIENTS CARDS *****************/
+
+.clients-title{
+  padding-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.clients img{
+  width: 80px;
+  height: 80px;
+}
+
+.clients .c2 img{
+  width: 80px;
+  height: 80px;
+  padding-top: 10px;
+}
+
+.clients-container{
+  padding-top: 30px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  width: 260px;
+  height: 250px;
+  margin: 10px;
+  text-align: center;
+}
+
+.clients p {
+  text-align:center;
+  font-weight: 400;
+}
+
+.row {
+  margin-left: 150px !important;
+
+}
+
+@media (max-width: 720px) {
+  .row{
+    margin-left: auto !important;
+  }
+}
+
+/*************** FORMULARIO CONTACTO*****************/
+
+.contact-us {
+  padding: 3rem;
+  background: black;
+}
+
+.contact-us h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.contact-us p{
+  color: lightgray;
+}
+
+.contact-us input,
+.contact-us textarea{
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  color: white;
+  border: 0;
+  border-bottom: .125rem solid white;
+  resize: none;
+  border-radius: 0;
+  outline: 0 !important;
+  box-shadow: none;
+  padding-left: 0 !important;
+}
+
+.form-container p{
+  color: white;
+  padding: .5rem;
+
+}
+
+.contact-us .container{
+  padding: 4rem;
+}
+
+.text-center input{
+  padding: 20px;
+}
+
+.contact-us input:focus,
+.contact-us textarea:focus{
+  background: transparent;
+  color: orange;
+  border-bottom: 0.125rem solid orange;
+}
+
+input.form-input {
+  margin: -.2rem;
+}
+
+@media (max-width) {
+  .contact-us {
+    overflow-x: hidden;
+  }
+
+  .contact-us .container {
+    padding: 0 1rem;
+  }
+
+  .contact-us p {
+    padding: 0 0.4rem;
+  }
+}
+
+.contact-us textarea {
+  height: 10rem !important;
+  width: 100% ;
+}
+ /*************** CONTACT BUTTON *****************/
+
+  .btn-contact-us {
+    
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid white;
+  }
+
+.btn-contact-us:hover {
+  text-decoration: none;
+  border: none;
+  background-color: orange;
+  color: black;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+
+/*************** FOOTER *****************/
+
+.footer {
+  padding-top: 20px;
+  color: darkgray;
+}
+
+.footer a{
+  text-decoration: none;
+  color: orange;
+  cursor: pointer;
+}
+
+/*************** ABOUT SECOND OPTION  *****************/
+
+.body-about {
+  margin: 0;
+  color: #1d1d1d;
+  background: #071a20;
+}
+
+.text p, h2{
+  position: relative;
+  z-index: 1;
+  margin: 20px 15%;
+}
+
+.image {
+  height: 380px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.text {
+  position: relative; 
+}
+
+.body-about .image .text{
+  padding: 40px 0;
+}
+
+.text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  rotate: -2deg;
+  translate: -50% -50%;
+  width: 150%;
+  height: 125%;
+  background: #ffffff;
+}
